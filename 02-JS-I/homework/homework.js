@@ -165,10 +165,18 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(número >= 0)
-    return 'positivo';
+  if(numero == 0)
+  {
+    return false;
+  }
+  if(numero > 0)
+  {
+    return "Es positivo";
+  }
   else
-    return 'negativo';
+  {
+    return "Es negativo";
+  }
   
 }
 
@@ -210,7 +218,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
- return (alto*ancho)/2;
+ return (base*altura)/2;
 }
 
 
